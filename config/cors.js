@@ -37,7 +37,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  allRoutes: false,
+  allRoutes: true,
 
   /***************************************************************************
   *                                                                          *
@@ -73,6 +73,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  headers: 'content-type, Access-Control-Allow-Origin'
+  headers: 'content-type, Access-Control-Allow-Origin',
+  securityLevel: 1
 
 };
