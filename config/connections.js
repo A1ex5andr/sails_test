@@ -42,10 +42,10 @@ module.exports.connections = {
   ***************************************************************************/
   MysqlAdapter: {
     adapter: 'sails-mysql',
-    host: 'dev.quickestate.ca',
-    user: 'root',
-    password: 'd3v3l0p3r',
-    database: 'qe-sails-test'
+    host: 'ethnocas.mysql.ukraine.com.ua',
+    user: 'ethnocas_sails',
+    password: 'ypqklxs9',
+    database: 'ethnocas_sails'
   },
 
   /***************************************************************************
