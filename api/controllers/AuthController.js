@@ -39,7 +39,7 @@ module.exports = {
     },
 
     estateCase: function(req, res){
-        return res.send({estateCaseId: 204});
+        return res.send([{estateCaseId: 204}]);
     }
 
 };
