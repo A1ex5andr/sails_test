@@ -48,6 +48,14 @@ module.exports.connections = {
     database: 'ethnocas_sails'
   },
 
+  MysqlLocalAdapter: {
+    adapter: 'sails-mysql',
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'qe-test'
+  },
+
   /***************************************************************************
   *                                                                          *
   * MongoDB is the leading NoSQL database.                                   *

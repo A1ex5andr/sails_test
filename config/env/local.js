@@ -18,17 +18,10 @@ module.exports = {
      ***************************************************************************/
 
     models: {
-        connection: 'MysqlAdapter',
+        connection: 'MysqlLocalAdapter',
         migrate: 'alter'
     },
 
-    port: 1337,
-
-    host: 'dev.quickestate.ca',
-
-    ssl: {
-        key: fs.readFileSync('ssl/quickestate.ca.key'),
-        cert: fs.readFileSync('ssl/quickestate.ca.crt')
-    }
+    port: 1337
 
 };

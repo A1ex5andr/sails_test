@@ -16,10 +16,30 @@ module.exports = {
             autoIncrement: true
         },
 
+        agreement_accepted: {
+            type: 'boolean'
+        },
+
+        last_logged_in: {
+            type: 'datetime'
+        },
+
+
+        username: {
+            type: 'string',
+            required: true,
+            maxLength: 512
+        },
+
         email: {
             type: 'email',
             required: true,
             maxLength: 100
+        },
+
+        emailVerified: {
+            type: 'boolean',
+            defaultsTo: 0
         },
 
         first_name: {
@@ -37,7 +57,7 @@ module.exports = {
         password: {
             type: 'string',
             required: true,
-            maxLength: 100
+            maxLength: 512
         }
 
     },
