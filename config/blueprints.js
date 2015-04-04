@@ -46,6 +46,7 @@ module.exports.blueprints = {
 
   // actions: true,
 
+
   /***************************************************************************
   *                                                                          *
   * RESTful routes (`sails.config.blueprints.rest`)                          *
