@@ -36,7 +36,8 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'post /auth/login': 'AuthController.login'
+  'post /auth/login': 'AuthController.login',
+  'get /AuthUsersPerEstateCases': 'AuthController.estateCase'
 
   /***************************************************************************
   *                                                                          *

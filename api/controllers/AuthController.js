@@ -9,15 +9,15 @@ module.exports = {
 
     login: function (req, res) {
         var userName = req.body.username,
-            userPassword = req.body.password,
-            bcrypt = require('bcrypt'),
-            jwt = require('jsonwebtoken');
+                userPassword = req.body.password,
+                bcrypt = require('bcrypt'),
+                jwt = require('jsonwebtoken');
 
         Users.findOne({username: userName},
                 function (err, user) {
                     if (err) return res.json(500, {error: err});
 
-                    if(user) {
+                    if (user) {
                         bcrypt.compare(userPassword, user.password, function (err, result) {
                             if (err) return res.json(500, {error: err});
                             if (result == false) return res.json(401);
@@ -36,6 +36,10 @@ module.exports = {
                         return res.status(401).json({error: 'Не правильный логин/пароль'});
                     }
                 });
+    },
+
+    estateCase: function(req, res){
+        return res.send({estateCaseId: 204});
     }
 
 };
